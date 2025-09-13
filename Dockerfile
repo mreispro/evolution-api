@@ -13,7 +13,7 @@ COPY ./package*.json ./
 COPY ./tsconfig.json ./
 COPY ./tsup.config.ts ./
 
-RUN npm ci && npm run build
+RUN npm ci
 
 COPY ./src ./src
 COPY ./public ./public
